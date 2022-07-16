@@ -1,38 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  height: 40rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  height: 40rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+/*
+ Header
+*/
+
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 5rem;
+  background-color: #01011c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hamIcon {
+  width: 3rem;
+  margin-right: 6.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickIcon {
+  width: 2rem;
+}
+
+/* Menu */
+
+.menu-bar {
+  border-radius: 20rem;
+  border-top: 5px solid white;
+  position: absolute;
+  right: 0;
+  width: 15%;
+  margin-right: 1rem;
+  background-color: #343434;
+}
+
+.menu {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+
+.menu:nth-child(1):hover {
+  background-color: #c08020;
+  font-size: 3rem;
+}
+.menu:nth-child(2):hover {
+  background-color: crimson;
+  font-size: 3rem;
+}
+.menu:nth-child(3):hover {
+  background-color: forestgreen;
+  font-size: 3rem;
+}
+.menu:nth-child(4):hover {
+  background-color: sienna;
+  font-size: 3rem;
+}
+.menu:nth-child(5):hover {
+  background-color: #c08020;
+  font-size: 3rem;
+}
+
+/*
+Home
+*/
+
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( to bottom, #01011c 55%, white );
+}
+
+.background-image {
+  /*border:1rem solid #c08020;*/
+  height: 20rem;
+  box-shadow: 0 9rem 9rem 0 #01011c;
+}
+
+/*
+introduction
+*/
+
+.introduction {
+  background-color: black;
+  display: flex;
+  justify-content: left;
+  color: gold;
+}
+
+.profile-img {
+  border: 5px solid gold;
+  border-radius: 100%;
+  width: 20rem;
+  height: 25rem;
+  margin: 5rem;
+}
+
+.paragraph {
+  margin: 10rem;
+  font-size: 1.5rem;
 }
