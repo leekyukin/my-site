@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {MenuContext} from '../context/MenuContext';
+import {Link} from "react-router-dom";
 
 const MyComponent = () => {
 
@@ -7,23 +8,23 @@ const MyComponent = () => {
 
   return (
     !menu &&
-    <div className="menu-bar">
+    <nav className="menu-bar">
       <div className="menu">
-        <a href="#">소개</a>
+        <Link to="/introduction">소개</Link>
       </div>
       <div className="menu">
-        <a href="#">목표</a>
+        <Link to="/books">Read Book</Link>
       </div>
       <div className="menu">
-        <a href="#">프로젝트</a>
+        <Link to="/project">Project</Link>
       </div>
       <div className="menu">
-        <a href="#">SNS</a>
+        <Link to="/sns">SNS</Link>
       </div>
       <div className="menu">
-        <a href="#">BLOG</a>
+        <Link to="/blog">BLOG</Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
