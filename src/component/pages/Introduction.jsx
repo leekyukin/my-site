@@ -1,5 +1,5 @@
 import React from 'react';
-import leekyukin from '../../img/leekyukin.jpeg'
+import leekyukin from '../../img/home/앤디워홀.jpeg'
 const MyComponent = () => {
   return (
     <div className="introduction main">
