@@ -1,9 +1,10 @@
 import React, {useContext, useState} from 'react';
-import ham from '../img/ham.png';
-import hamMon from '../img/hamMon.png';
+import ham from '../img/header/ham.png';
+import hamMon from '../img/header/hamMon.png';
 import {MenuContext} from '../context/MenuContext';
-import clickIcon from "../img/click.png"
-import boomIcon from "../img/boom.png";
+import clickIcon from "../img/header/click.png"
+import boomIcon from "../img/header/boom.png";
+import {Link} from "react-router-dom";
 
 const MyComponent = () => {
 
@@ -25,7 +26,7 @@ const MyComponent = () => {
           ? <img src={boomIcon} alt="boomer"
                  onMouseLeave={toggleBoom}/>
           : <h1 >
-              <a onMouseOver={toggleBoom} href="/">Lee Kyukin</a>
+              <Link onMouseOver={toggleBoom} to="/">Lee Kyukin</Link>
             </h1>
         }
       <div>
