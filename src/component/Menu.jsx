@@ -13,7 +13,7 @@ const MyComponent = () => {
         <Link to="/introduction">소개</Link>
       </div>
       <div className="menu">
-        <Link to="/books">Read Book</Link>
+        <Link to="/books">Book</Link>
       </div>
       <div className="menu">
         <Link to="/project">Project</Link>
